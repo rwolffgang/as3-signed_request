@@ -11,7 +11,7 @@ This class relies on the [ActionScript 3 Cryptography Library](https://github.co
 Kongregate has a good description of how a signed request works: [Kongregate's description with PHP example](http://developers.kongregate.com/docs/all/signed-requests)
 
 ## Usage
-Usage is fairly simple: Pass a signed request as string to the class and you can start accessing the payload. To verify the request, call `verifySignature(appSecret:String)` with your application's secrent.
+Usage is fairly simple: Pass a signed request as string to the constructor and you can start accessing the payload. To verify the request, call `verifySignature(appSecret:String)` with your application's secret.
 
     var testRequest:String = "zvUZIJbHmjZUfg5PvVeU4xEpqdfgzlcVCIvpW-2OZV8.eyJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImFtb3VudCI6IjQuOTkiLCJjdXJyZW5jeSI6IkVVUiIsImlzc3VlZF9hdCI6MTQxMTM4OTQwMiwicGF5bWVudF9pZCI6NTMxNTIzNDMzNjQ0NDE5LCJxdWFudGl0eSI6IjEiLCJzdGF0dXMiOiJjb21wbGV0ZWQifQ";
 	var testAppSecret:String = "8b0d5bd5fe5dc3bec1ef9848563695e3";
